@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cnt = 0;
+        function count() {
+            cnt++;
+            document.getElementById("counter").innerText = "Count: " + cnt;
+            if(cnt == 10){
+                alert("Counter reached 10!");
+                cnt = 0; // Reset counter after reaching 10
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1><center>Counter App</center></h1>
+        <button onclick="count()"><center>Counter</center></button>
+        <h1 id="counter">Count: 0</h1>
+    </div>
+</body>
+</html>
